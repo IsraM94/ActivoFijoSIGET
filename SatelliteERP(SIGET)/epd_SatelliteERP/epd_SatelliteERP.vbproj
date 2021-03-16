@@ -1,0 +1,3542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{645B9D48-D2E3-4517-B9CD-8F272C74F14C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>epd_SatelliteERP.My.MyApplication</StartupObject>
+    <RootNamespace>epd_SatelliteERP</RootNamespace>
+    <AssemblyName>epd_SatelliteERP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>epd_SatelliteERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>epd_SatelliteERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A5A23425DDD4220F11D436BAC18588CB153D7293</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>epd_SatelliteERP_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>epd_SatelliteERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>epd_SatelliteERP.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ERP-escritorioAPP_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb">
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG, Version=2.2.5.0, Culture=neutral, PublicKeyToken=03563089b1be05dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>bin\Debug\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.TeamFoundation.Client, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.TeamFoundation.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.TeamFoundation.Controls, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.ExtensibilityHosting, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MonthCalendar">
+      <HintPath>..\..\..\Users\Orlando\Desktop\ERP_Cuentas por Pagar\AccountsPayable\AccountsPayable\bin\Debug\MonthCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="PieChartControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\prueba\PieChart\PieChartControls\bin\Debug\PieChartControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="componentes\Configuracion\Campo_DocumentoIdentidad.Designer.vb">
+      <DependentUpon>Campo_DocumentoIdentidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Campo_DocumentoIdentidad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Configurar_Campos.Designer.vb">
+      <DependentUpon>Configurar_Campos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Configurar_Campos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Configurar_Proveedores.Designer.vb">
+      <DependentUpon>Configurar_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Configurar_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Configuracion\Security.vb" />
+    <Compile Include="componentes\Controls\IndicadoresStatusActivo.Designer.vb">
+      <DependentUpon>IndicadoresStatusActivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Controls\IndicadoresStatusActivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Controls\IndicadoresActFiDptos.Designer.vb">
+      <DependentUpon>IndicadoresActFiDptos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Controls\IndicadoresActFiDptos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Element\ComboBox_EPD.Designer.vb">
+      <DependentUpon>ComboBox_EPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Element\ComboBox_EPD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Element\ProcessInformation\Query.vb" />
+    <Compile Include="componentes\Element\ProcessInformation\SendMail.vb" />
+    <Compile Include="componentes\Element\TextCaja_EPD.Designer.vb">
+      <DependentUpon>TextCaja_EPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Element\TextCaja_EPD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\ERP_PreviewAmortizacion.Designer.vb">
+      <DependentUpon>ERP_PreviewAmortizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\ERP_PreviewAmortizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_Amortizacion.Designer.vb">
+      <DependentUpon>Financiero_Procesos_Amortizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_Amortizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionAgregarAc.Designer.vb">
+      <DependentUpon>Financiero_Procesos_AmortizacionAgregarAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionAgregarAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionRechazo.Designer.vb">
+      <DependentUpon>Financiero_Procesos_AmortizacionRechazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionRechazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Configurar_Monto_Adquisicion.Designer.vb">
+      <DependentUpon>Configurar_Monto_Adquisicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Configurar_Monto_Adquisicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\dsCodeBar.vb">
+      <DependentUpon>dsCodeBar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_PreviewDepreciacion.Designer.vb">
+      <DependentUpon>ERP_PreviewDepreciacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_PreviewDepreciacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportAmortizacion.Designer.vb">
+      <DependentUpon>ERP_ReportAmortizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportAmortizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportDepreciation.Designer.vb">
+      <DependentUpon>ERP_ReportDepreciation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportDepreciation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_RequisicionesEmpleado.Designer.vb">
+      <DependentUpon>ERP_RequisicionesEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_RequisicionesEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionRechazo.Designer.vb">
+      <DependentUpon>Financiero_Procesos_DepreciacionRechazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionRechazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionAgregarAc.Designer.vb">
+      <DependentUpon>Financiero_Procesos_DepreciacionAgregarAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionAgregarAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_Depreciacion.Designer.vb">
+      <DependentUpon>Financiero_Procesos_Depreciacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_Depreciacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Clases\clsCodeBarImpr.vb" />
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Clases\CrearCodeBar.vb" />
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Clases\ReportProccesor.vb" />
+    <Compile Include="componentes\Financiero\ActivoFijo\dsCodeBar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCodeBar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ConfirmTransfer.Designer.vb">
+      <DependentUpon>ERP_ConfirmTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ConfirmTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Financiero_BuscarActivo.Designer.vb">
+      <DependentUpon>ERP_Financiero_BuscarActivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Financiero_BuscarActivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Financiero_Buscar_Bienes.Designer.vb">
+      <DependentUpon>ERP_Financiero_Buscar_Bienes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Financiero_Buscar_Bienes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Inventory_SelectReportFixedAssetsLegacy.Designer.vb">
+      <DependentUpon>ERP_Inventory_SelectReportFixedAssetsLegacy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Inventory_SelectReportFixedAssetsLegacy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Reason.Designer.vb">
+      <DependentUpon>ERP_Reason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Reason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportTrasnfer.Designer.vb">
+      <DependentUpon>ERP_ReportTrasnfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_ReportTrasnfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Transeferencia.Designer.vb">
+      <DependentUpon>ERP_Transeferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\ERP_Transeferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo.Designer.vb">
+      <DependentUpon>Financiero_CreaActivoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo_Especificacion.Designer.vb">
+      <DependentUpon>Financiero_CreaActivoFijo_Especificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo_Especificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_TablaDepreciacionPorProducto.Designer.vb">
+      <DependentUpon>Financiero_TablaDepreciacionPorProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Financiero_TablaDepreciacionPorProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmImportDataXLS.Designer.vb">
+      <DependentUpon>frmImportDataXLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmImportDataXLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmLegacy.Designer.vb">
+      <DependentUpon>frmLegacy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmLegacy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmSeleccionarHojaXLS.Designer.vb">
+      <DependentUpon>frmSeleccionarHojaXLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmSeleccionarHojaXLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmViCodeBar.Designer.vb">
+      <DependentUpon>frmViCodeBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\frmViCodeBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Encabezados.Designer.vb">
+      <DependentUpon>Encabezados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Encabezados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Resumida_activo.Designer.vb">
+      <DependentUpon>Ficha_Resumida_activo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Resumida_activo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Transparencia.Designer.vb">
+      <DependentUpon>Ficha_Transparencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Transparencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Financiero_CrearReporte.Designer.vb">
+      <DependentUpon>Financiero_CrearReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\Financiero_CrearReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsDepreciation.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFixedAssetsDepreciation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsGeneral.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFixedAssetsGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\UC_Especificacion.Designer.vb">
+      <DependentUpon>UC_Especificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ActivoFijo\UC_Especificacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\BaseDatos\Financiero_SQLServer.vb" />
+    <Compile Include="componentes\Financiero\Contabilidad\DataSet\EPD_SatelliteERPDataSet.Designer.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="componentes\Financiero\Contabilidad\DataSet\EPD_SatelliteERPDataSet.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\Contabilidad\Financiero_ReportViewer.Designer.vb">
+      <DependentUpon>Financiero_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\Contabilidad\Financiero_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Calendar\calendar.Designer.vb">
+      <DependentUpon>calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Calendar\calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Calendar\ERP_CalendarDetalles.designer.vb">
+      <DependentUpon>ERP_CalendarDetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Calendar\ERP_CalendarDetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Config_Factura.vb" />
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_DocumentoFiscalDigiteNumero.Designer.vb">
+      <DependentUpon>Financiero_DocumentoFiscalDigiteNumero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_DocumentoFiscalDigiteNumero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_PreviewDocFiscal.Designer.vb">
+      <DependentUpon>Financiero_PreviewDocFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_PreviewDocFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarCliente.Designer.vb">
+      <DependentUpon>Generic_SeleccionarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarProducto.Designer.vb">
+      <DependentUpon>Generic_SeleccionarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Reportes\Financiero_GraficoFacturacion.Designer.vb">
+      <DependentUpon>Financiero_GraficoFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\CuentasPorCobrar\Reportes\Financiero_GraficoFacturacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_Camara.Designer.vb">
+      <DependentUpon>ERP_Camara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_Camara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_TablaDepreciacion_SeleccionPeriodo.Designer.vb">
+      <DependentUpon>ERP_TablaDepreciacion_SeleccionPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_TablaDepreciacion_SeleccionPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_VistaImagen.Designer.vb">
+      <DependentUpon>ERP_VistaImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ERP_VistaImagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\Financiero_Modulos.Designer.vb">
+      <DependentUpon>Financiero_Modulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\Financiero_Modulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\ModuloActivoFijo.Designer.vb">
+      <DependentUpon>ModuloActivoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Financiero\ModuloActivoFijo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Financiero\LogFiles\ProcessGeneral.vb" />
+    <Compile Include="componentes\Mantenimientos\Component\Matenimiento_FixedAssetTypeDefine.Designer.vb">
+      <DependentUpon>Matenimiento_FixedAssetTypeDefine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Component\Matenimiento_FixedAssetTypeDefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Component\ModuloConfiguracionReportes.Designer.vb">
+      <DependentUpon>ModuloConfiguracionReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Component\ModuloConfiguracionReportes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Component\ModuloMantenimientos.Designer.vb">
+      <DependentUpon>ModuloMantenimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Component\ModuloMantenimientos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Generic_SQLServer.vb" />
+    <Compile Include="componentes\Mantenimientos\Mantenimientos_Clientes.Designer.vb">
+      <DependentUpon>Mantenimientos_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimientos_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Departamentos.Designer.vb">
+      <DependentUpon>Mantenimiento_Departamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Departamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_FixedAssetSubType.Designer.vb">
+      <DependentUpon>Mantenimiento_FixedAssetSubType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_FixedAssetSubType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Bank.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_CategoryMaintenance.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_CategoryMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_CategoryMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_CollectingAgency.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_CollectingAgency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_CollectingAgency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Country.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_Country.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Country.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Municipality.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_Municipality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Municipality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_OptionMaintenance.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_OptionMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_OptionMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Taxes.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_Taxes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_Taxes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_UnitMeasure.Designer.vb">
+      <DependentUpon>Mantenimiento_Generic_UnitMeasure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Generic_UnitMeasure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Indicators.Designer.vb">
+      <DependentUpon>Mantenimiento_Indicators.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Mantenimiento_Indicators.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Matenimiento_FixedAssetState.Designer.vb">
+      <DependentUpon>Matenimiento_FixedAssetState.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Matenimiento_FixedAssetState.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Matenimiento_FixedAssetType.Designer.vb">
+      <DependentUpon>Matenimiento_FixedAssetType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Mantenimientos\Matenimiento_FixedAssetType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\MenusMetro\metro_Lateral.Designer.vb">
+      <DependentUpon>metro_Lateral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\MenusMetro\metro_Lateral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\BaseDeDatos\Bodega_SQLServer.vb" />
+    <Compile Include="componentes\Operaciones\BaseDeDatos\EPD_SatelliteERPDataSet_Inventario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSet_Inventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\BaseDeDatos\EPD_SatelliteERPDataSet_Inventario.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet_Inventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\BaseDeDatos\Requisiciones_SQLServer.vb" />
+    <Compile Include="componentes\Operaciones\BaseDeDatos\Operaciones_SQLServer.vb" />
+    <Compile Include="componentes\Operaciones\Compras\ERP_Compras_TipoCompra.Designer.vb">
+      <DependentUpon>ERP_Compras_TipoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Compras\ERP_Compras_TipoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\FormDinamico.Designer.vb">
+      <DependentUpon>FormDinamico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\FormDinamico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_StatusProduct.Designer.vb">
+      <DependentUpon>ERP_Inventory_StatusProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_StatusProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_UpdateMaximusAndMinimous.Designer.vb">
+      <DependentUpon>ERP_Inventory_UpdateMaximusAndMinimous.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_UpdateMaximusAndMinimous.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet_ReportsInventory.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSet_ReportsInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet_ReportsInventory.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet_ReportsInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\DataSet\ERP_DS_Inventary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_DS_Inventary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_DialogProductEntry.Designer.vb">
+      <DependentUpon>ERP_Inventory_DialogProductEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_DialogProductEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_ConfigureAccountPayable.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_ConfigureAccountPayable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_ConfigureAccountPayable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDeparturesAproved.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_InventoryDeparturesAproved.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDeparturesAproved.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDepartures.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_InventoryDepartures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDepartures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_LocationAndStowage.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_LocationAndStowage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_LocationAndStowage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_Quantity.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_Quantity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_Quantity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_StowageAvailableTransfer.Designer.vb">
+      <DependentUpon>ERP_Inventory_StowageAvailableTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_StowageAvailableTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_ClientesCuentasPorCobrar.Designer.vb">
+      <DependentUpon>ERP_ClientesCuentasPorCobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_ClientesCuentasPorCobrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_CreateCreditLine.Designer.vb">
+      <DependentUpon>ERP_CreateCreditLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_CreateCreditLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_CreditLine.Designer.vb">
+      <DependentUpon>ERP_CreditLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_CreditLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_GenericCustomerClients.Designer.vb">
+      <DependentUpon>ERP_GenericCustomerClients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_GenericCustomerClients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventary_Modelo.Designer.vb">
+      <DependentUpon>ERP_Inventary_Modelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventary_Modelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_InventorySuggestedShopping.Designer.vb">
+      <DependentUpon>ERP_InventorySuggestedShopping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_InventorySuggestedShopping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateProduct.designer.vb">
+      <DependentUpon>ERP_Inventory_CreateProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateRecipe.Designer.vb">
+      <DependentUpon>ERP_Inventory_CreateRecipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateRecipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_CreateSubProduct.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_CreateSubProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_CreateSubProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_SuggestedChange.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_SuggestedChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_SuggestedChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_HeaderImputsAndOutputs.Designer.vb">
+      <DependentUpon>ERP_Inventory_HeaderImputsAndOutputs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_HeaderImputsAndOutputs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_IngredientsRecipe.Designer.vb">
+      <DependentUpon>ERP_Inventory_IngredientsRecipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_IngredientsRecipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Out.Designer.vb">
+      <DependentUpon>ERP_Inventory_Out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_ProgressBarSuggested.Designer.vb">
+      <DependentUpon>ERP_Inventory_ProgressBarSuggested.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_ProgressBarSuggested.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Busqueda.designer.vb">
+      <DependentUpon>ERP_Inventory_Busqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_Busqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_QuantityDialog.Designer.vb">
+      <DependentUpon>ERP_Inventory_QuantityDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_QuantityDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_SubProducts.Designer.vb">
+      <DependentUpon>ERP_Inventory_SubProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventory_SubProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Bodegas.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Bodegas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Bodegas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Category.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_GiroGeneral.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_GiroGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_GiroGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_DialogSearch.designer.vb">
+      <DependentUpon>ERP_Mantenimiento_DialogSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_DialogSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventary_CreaOrden.Designer.vb">
+      <DependentUpon>ERP_Inventary_CreaOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Inventary_CreaOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Line.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Line.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Line.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Marcas.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Marcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Marcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ClientType.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_ClientType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ClientType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_MeasureUnit.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_MeasureUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_MeasureUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_OutletCatalog.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_OutletCatalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_OutletCatalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ProductCondition.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_ProductCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ProductCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Ubicacion.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Ubicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Ubicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_AnimalesBodega.Designer.vb">
+      <DependentUpon>Inventario_AnimalesBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_AnimalesBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechasEntregados.Designer.vb">
+      <DependentUpon>Inventario_fechasEntregados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechasEntregados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechas.Designer.vb">
+      <DependentUpon>Inventario_fechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_Saldo_Existencia.Designer.vb">
+      <DependentUpon>Inventario_Saldo_Existencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Reportes\Inventario_Saldo_Existencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\EditarRequisicion.Designer.vb">
+      <DependentUpon>EditarRequisicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\EditarRequisicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_Requisitions.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_Requisitions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_Requisitions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_TypesRequisition.Designer.vb">
+      <DependentUpon>ERP_Inventory_Dialog_TypesRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_TypesRequisition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Operaciones_ReportViewer.Designer.vb">
+      <DependentUpon>Operaciones_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Operaciones_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\ModuloInventarios.Designer.vb">
+      <DependentUpon>ModuloInventarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\ModuloInventarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\precios.Designer.vb">
+      <DependentUpon>precios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\precios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Proyectos\Operaciones_ProyectosCrear.Designer.vb">
+      <DependentUpon>Operaciones_ProyectosCrear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Operaciones\Proyectos\Operaciones_ProyectosCrear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SubirDocumentosRespaldo.Designer.vb">
+      <DependentUpon>SubirDocumentosRespaldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SubirDocumentosRespaldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoaSeguimiento.Designer.vb">
+      <DependentUpon>AprobarRechazarPoaSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoaSeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOASeguimiento.Designer.vb">
+      <DependentUpon>RechazosPOASeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOASeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPEI.Designer.vb">
+      <DependentUpon>RechazosPEI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPEI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOA.Designer.vb">
+      <DependentUpon>RechazosPOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPei.Designer.vb">
+      <DependentUpon>AprobarRechazarPei.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPei.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoa.Designer.vb">
+      <DependentUpon>AprobarRechazarPoa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AgregarAvanceEjecucion.Designer.vb">
+      <DependentUpon>AgregarAvanceEjecucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AgregarAvanceEjecucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AlertaAcciones.Designer.vb">
+      <DependentUpon>AlertaAcciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\AlertaAcciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicasDirecto.Designer.vb">
+      <DependentUpon>PorcentajeAccionesEstrategicasDirecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicasDirecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMesAnio.Designer.vb">
+      <DependentUpon>SeleccionarMesAnio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMesAnio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMes.Designer.vb">
+      <DependentUpon>SeleccionarMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarAnio.Designer.vb">
+      <DependentUpon>SeleccionarAnio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarAnio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeguimientoPOA.Designer.vb">
+      <DependentUpon>SeguimientoPOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\SeguimientoPOA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\CreacionPOA.Designer.vb">
+      <DependentUpon>CreacionPOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\CreacionPOA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicas.Designer.vb">
+      <DependentUpon>PorcentajeAccionesEstrategicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableMapRisk.Designer.vb">
+      <DependentUpon>POA_InsertResponsableMapRisk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableMapRisk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Matriz\MatrizProceso.Designer.vb">
+      <DependentUpon>MatrizProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Matriz\MatrizProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Matriz\MatrizProcesoEjes.Designer.vb">
+      <DependentUpon>MatrizProcesoEjes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Matriz\MatrizProcesoEjes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloDocumentacion.Designer.vb">
+      <DependentUpon>ModuloDocumentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloDocumentacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloMapaRiesgo.Designer.vb">
+      <DependentUpon>ModuloMapaRiesgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloMapaRiesgo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloPOA.Designer.vb">
+      <DependentUpon>ModuloPOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloPOA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloFilosofia.Designer.vb">
+      <DependentUpon>ModuloFilosofia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloFilosofia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloPEI.Designer.vb">
+      <DependentUpon>ModuloPEI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\ModuloPEI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesEstrategicas.Designer.vb">
+      <DependentUpon>POA_InsertAccionesEstrategicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesEstrategicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesNoProgramadas.Designer.vb">
+      <DependentUpon>POA_InsertAccionesNoProgramadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesNoProgramadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesOperativas.Designer.vb">
+      <DependentUpon>POA_InsertAccionesOperativas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesOperativas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertEjesEstrategicos.Designer.vb">
+      <DependentUpon>POA_InsertEjesEstrategicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertEjesEstrategicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertFilosofiaInstitucional.Designer.vb">
+      <DependentUpon>POA_InsertFilosofiaInstitucional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertFilosofiaInstitucional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGerencia.Designer.vb">
+      <DependentUpon>POA_InsertGerencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGerencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGradoImpacto.Designer.vb">
+      <DependentUpon>POA_InsertGradoImpacto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGradoImpacto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertIndicators.Designer.vb">
+      <DependentUpon>POA_InsertIndicators.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertIndicators.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertObjetivos.Designer.vb">
+      <DependentUpon>POA_InsertObjetivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertObjetivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertProbabilidad.Designer.vb">
+      <DependentUpon>POA_InsertProbabilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertProbabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableEjecucion.Designer.vb">
+      <DependentUpon>POA_InsertResponsableEjecucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableEjecucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResult.Designer.vb">
+      <DependentUpon>POA_InsertResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertUnidadLider.Designer.vb">
+      <DependentUpon>POA_InsertUnidadLider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertUnidadLider.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_Mantenimientos.Designer.vb">
+      <DependentUpon>POA_Mantenimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_Mantenimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_EvaluacionMapa.Designer.vb">
+      <DependentUpon>POA_EvaluacionMapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_EvaluacionMapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_MapaRiesgo.Designer.vb">
+      <DependentUpon>POA_MapaRiesgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Mantenimientos\POA_MapaRiesgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\POA_SQLServer.vb" />
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportesGenerales_ReportViewer.Designer.vb">
+      <DependentUpon>ReportesGenerales_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportesGenerales_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\Planificacion_ReportViewer.Designer.vb">
+      <DependentUpon>Planificacion_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\Planificacion_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteMapaRiesgo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportePEI.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePEI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportePOA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePOA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportePOA.vb">
+      <DependentUpon>ReportePOA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportesGenerales.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportesGenerales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\PlanEstrategico\Reportes\ReportesGenerales.vb">
+      <DependentUpon>ReportesGenerales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkLocation.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_WorkLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkPosition.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_WorkPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\RecursosHumanos_MantoEmpleados.Designer.vb">
+      <DependentUpon>RecursosHumanos_MantoEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\RecursosHumanos_MantoEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\HumanResources_SQLServer.vb" />
+    <Compile Include="componentes\RecursosHumanos\Component\ModuloRecursosHumanos.Designer.vb">
+      <DependentUpon>ModuloRecursosHumanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\Component\ModuloRecursosHumanos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Reporting\Config_Components.Designer.vb">
+      <DependentUpon>Config_Components.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Reporting\Config_Components.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Reporting\Config_Reports.Designer.vb">
+      <DependentUpon>Config_Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Reporting\Config_Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Reporting\Reporting_Field.vb" />
+    <Compile Include="componentes\Users\Component\ModuloHistorico.Designer.vb">
+      <DependentUpon>ModuloHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Users\Component\ModuloHistorico.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Users\Respaldos\Backup_Respaldos.Designer.vb">
+      <DependentUpon>Backup_Respaldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Users\Respaldos\Backup_Respaldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\UC_Actividades.Designer.vb">
+      <DependentUpon>UC_Actividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\UC_Actividades.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Users\Component\ModuloUsers.Designer.vb">
+      <DependentUpon>ModuloUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Users\Component\ModuloUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentes\Users\Config_InsertUserAccesos.Designer.vb">
+      <DependentUpon>Config_InsertUserAccesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Users\Config_InsertUserAccesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\Users\Config_UserAccess.Designer.vb">
+      <DependentUpon>Config_UserAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\Users\Config_UserAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_Departamentos.Designer.vb">
+      <DependentUpon>ERP_Mantenimiento_Departamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\RecursosHumanos\ERP_Mantenimiento_Departamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="componentes\VisualizadorLog\ShowLog.Designer.vb">
+      <DependentUpon>ShowLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\VisualizadorLog\ShowLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Fina_Procesos.Designer.vb">
+      <DependentUpon>Fina_Procesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Fina_Procesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Generic_Process.Designer.vb">
+      <DependentUpon>Generic_Process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Generic_Process.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Generic_User.Designer.vb">
+      <DependentUpon>Generic_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Generic_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Operacion_Procesos.Designer.vb">
+      <DependentUpon>Operacion_Procesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Operacion_Procesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\RRHH_Procesos.Designer.vb">
+      <DependentUpon>RRHH_Procesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\RRHH_Procesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\SQLConfiguration.vb" />
+    <Compile Include="ERP_Menu.Designer.vb">
+      <DependentUpon>ERP_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ERP_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP_MenuMetro.Designer.vb">
+      <DependentUpon>ERP_MenuMetro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ERP_MenuMetro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.vb" />
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPDataSet2.Designer.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPDataSet2.vb">
+      <DependentUpon>EPD_SatelliteERPDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPDataSet51.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPDataSetFormulas1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPDataSetFormulas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EPD_SatelliteERPFinanceLog1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPD_SatelliteERPFinanceLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ERP_SP_Inventory_GetCategory1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_SP_Inventory_GetCategory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioDataInventoryStowage1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventarioDataInventoryStowage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventarioDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioDS2.Designer.vb">
+      <DependentUpon>SatelliteERP_InventarioDS2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioDS2.vb">
+      <DependentUpon>SatelliteERP_InventarioDS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioMarca1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventarioMarca.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet101.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet110.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet111.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet121.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet131.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet141.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet151.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet161.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet171.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet181.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet191.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet201.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet211.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet221.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet231.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet241.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet251.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet261.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet271.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet281.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet291.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet30.Designer.vb">
+      <DependentUpon>SatelliteERP_InventariosDataSet30.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet30.vb">
+      <DependentUpon>SatelliteERP_InventariosDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet310.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet311.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet321.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet331.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet341.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet351.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet361.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet371.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet381.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet391.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet401.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet410.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet411.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet421.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet431.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet441.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet451.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet461.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet471.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet481.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet491.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet501.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet510.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet511.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet521.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet531.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet541.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet54.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet551.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet55.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet561.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet56.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet571.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet57.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet581.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet58.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet591.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet59.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet71.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet81.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventariosDataSet91.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventariosDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_InventarioSuppliedRequisitions1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_InventarioSuppliedRequisitions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SatelliteERP_Inventary1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SatelliteERP_Inventary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Validaciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="componentes\Configuracion\Campo_DocumentoIdentidad.resx">
+      <DependentUpon>Campo_DocumentoIdentidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Configuracion\Configurar_Campos.resx">
+      <DependentUpon>Configurar_Campos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Configuracion\Configurar_Proveedores.resx">
+      <DependentUpon>Configurar_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Controls\IndicadoresStatusActivo.resx">
+      <DependentUpon>IndicadoresStatusActivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Controls\IndicadoresActFiDptos.resx">
+      <DependentUpon>IndicadoresActFiDptos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Element\ComboBox_EPD.resx">
+      <DependentUpon>ComboBox_EPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Element\TextCaja_EPD.resx">
+      <DependentUpon>TextCaja_EPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Amortizacion\ERP_PreviewAmortizacion.resx">
+      <DependentUpon>ERP_PreviewAmortizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_Amortizacion.resx">
+      <DependentUpon>Financiero_Procesos_Amortizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionAgregarAc.resx">
+      <DependentUpon>Financiero_Procesos_AmortizacionAgregarAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Amortizacion\Financiero_Procesos_AmortizacionRechazo.resx">
+      <DependentUpon>Financiero_Procesos_AmortizacionRechazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Configurar_Monto_Adquisicion.resx">
+      <DependentUpon>Configurar_Monto_Adquisicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_ConfirmTransfer.resx">
+      <DependentUpon>ERP_ConfirmTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_Financiero_BuscarActivo.resx">
+      <DependentUpon>ERP_Financiero_BuscarActivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_Financiero_Buscar_Bienes.resx">
+      <DependentUpon>ERP_Financiero_Buscar_Bienes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_Inventory_SelectReportFixedAssetsLegacy.resx">
+      <DependentUpon>ERP_Inventory_SelectReportFixedAssetsLegacy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_PreviewDepreciacion.resx">
+      <DependentUpon>ERP_PreviewDepreciacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_Reason.resx">
+      <DependentUpon>ERP_Reason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_ReportAmortizacion.resx">
+      <DependentUpon>ERP_ReportAmortizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_ReportDepreciation.resx">
+      <DependentUpon>ERP_ReportDepreciation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_RequisicionesEmpleado.resx">
+      <DependentUpon>ERP_RequisicionesEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionRechazo.resx">
+      <DependentUpon>Financiero_Procesos_DepreciacionRechazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_DepreciacionAgregarAc.resx">
+      <DependentUpon>Financiero_Procesos_DepreciacionAgregarAc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_Procesos_Depreciacion.resx">
+      <DependentUpon>Financiero_Procesos_Depreciacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_ReportTrasnfer.resx">
+      <DependentUpon>ERP_ReportTrasnfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\ERP_Transeferencia.resx">
+      <DependentUpon>ERP_Transeferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo.resx">
+      <DependentUpon>Financiero_CreaActivoFijo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_CreaActivoFijo_Especificacion.resx">
+      <DependentUpon>Financiero_CreaActivoFijo_Especificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Financiero_TablaDepreciacionPorProducto.resx">
+      <DependentUpon>Financiero_TablaDepreciacionPorProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\frmImportDataXLS.resx">
+      <DependentUpon>frmImportDataXLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\frmLegacy.resx">
+      <DependentUpon>frmLegacy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\frmSeleccionarHojaXLS.resx">
+      <DependentUpon>frmSeleccionarHojaXLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\frmViCodeBar.resx">
+      <DependentUpon>frmViCodeBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Altas_Activo_Fijo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Bienes_consumo_entregados.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Bajas_Activo_Fijo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Encabezados.resx">
+      <DependentUpon>Encabezados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Entrega_Prductos_Departamento.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\ReporteGeneralActivoFijo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Resumida_ActivoSeguro.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Resumida_Activo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Resumida_activo.resx">
+      <DependentUpon>Ficha_Resumida_activo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Transparencia.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Ficha_Transparencia.resx">
+      <DependentUpon>Ficha_Transparencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Financiero_CrearReporte.resx">
+      <DependentUpon>Financiero_CrearReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Registro_Contable_Altas_Bajas_Activo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_Contable_Depreciacion.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_Detalle_General_Bienes_Capitalizables.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssetsType.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_DataSheet.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_Depreciation.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_DataSheet_ant.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_Asignacion.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_DepreciationHeader.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_DepreciationStatus.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_FixedAssets_General.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_deAmortizacion.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_InventarioActivos.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_InventarioActivosLegacy.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_InventarioActivosPorEstado.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_InventarioActivosTrasferencia.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_Inventario_Depreciacion.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_TransferenciaActivoFijo.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reportes\Reporte_periodico_Depreciacion_Activos.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\Reporte_Cuadro_Depreciacion.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\rptCodeBar.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ActivoFijo\UC_Especificacion.resx">
+      <DependentUpon>UC_Especificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\Contabilidad\Financiero_ReportViewer.resx">
+      <DependentUpon>Financiero_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\Calendar\calendar.resx">
+      <DependentUpon>calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\Calendar\ERP_CalendarDetalles.resx">
+      <DependentUpon>ERP_CalendarDetalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_DocumentoFiscalDigiteNumero.resx">
+      <DependentUpon>Financiero_DocumentoFiscalDigiteNumero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Financiero_PreviewDocFiscal.resx">
+      <DependentUpon>Financiero_PreviewDocFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarCliente.resx">
+      <DependentUpon>Generic_SeleccionarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\DocumentosFiscales\Generic_SeleccionarProducto.resx">
+      <DependentUpon>Generic_SeleccionarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\CuentasPorCobrar\Reportes\Financiero_GraficoFacturacion.resx">
+      <DependentUpon>Financiero_GraficoFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Component\ModuloMantenimientos.resx">
+      <DependentUpon>ModuloMantenimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimientos_Clientes.resx">
+      <DependentUpon>Mantenimientos_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Departamentos.resx">
+      <DependentUpon>Mantenimiento_Departamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_FixedAssetSubType.resx">
+      <DependentUpon>Mantenimiento_FixedAssetSubType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_Bank.resx">
+      <DependentUpon>Mantenimiento_Generic_Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_CategoryMaintenance.resx">
+      <DependentUpon>Mantenimiento_Generic_CategoryMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_CollectingAgency.resx">
+      <DependentUpon>Mantenimiento_Generic_CollectingAgency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_Country.resx">
+      <DependentUpon>Mantenimiento_Generic_Country.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_Municipality.resx">
+      <DependentUpon>Mantenimiento_Generic_Municipality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_OptionMaintenance.resx">
+      <DependentUpon>Mantenimiento_Generic_OptionMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_Taxes.resx">
+      <DependentUpon>Mantenimiento_Generic_Taxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Generic_UnitMeasure.resx">
+      <DependentUpon>Mantenimiento_Generic_UnitMeasure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Mantenimiento_Indicators.resx">
+      <DependentUpon>Mantenimiento_Indicators.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Matenimiento_FixedAssetState.resx">
+      <DependentUpon>Matenimiento_FixedAssetState.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Matenimiento_FixedAssetType.resx">
+      <DependentUpon>Matenimiento_FixedAssetType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDeparturesAproved.resx">
+      <DependentUpon>ERP_Inventory_Dialog_InventoryDeparturesAproved.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Balance_Mensual_Almacen.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\ComprasSugeridas.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Control_Inventario.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Ingreso_de_productos.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechasEntregados.resx">
+      <DependentUpon>Inventario_fechasEntregados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_fechas.resx">
+      <DependentUpon>Inventario_fechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_KardexDH.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ReporteLotes.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_Saldo_Existencia.resx">
+      <DependentUpon>Inventario_Saldo_Existencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Reporte_Entradas_Producto.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Reporte_BienesEntregados.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Reporte_Salida_productos.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\SaldoExistencias.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Saldo_cuenta.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Inventory_ReportSuppliedRequisitions.rdlc" />
+    <EmbeddedResource Include="componentes\Financiero\ERP_Camara.resx">
+      <DependentUpon>ERP_Camara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ERP_TablaDepreciacion_SeleccionPeriodo.resx">
+      <DependentUpon>ERP_TablaDepreciacion_SeleccionPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ERP_VistaImagen.resx">
+      <DependentUpon>ERP_VistaImagen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\Financiero_Modulos.resx">
+      <DependentUpon>Financiero_Modulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Financiero\ModuloActivoFijo.resx">
+      <DependentUpon>ModuloActivoFijo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Component\Matenimiento_FixedAssetTypeDefine.resx">
+      <DependentUpon>Matenimiento_FixedAssetTypeDefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Mantenimientos\Component\ModuloConfiguracionReportes.resx">
+      <DependentUpon>ModuloConfiguracionReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\MenusMetro\metro_Lateral.resx">
+      <DependentUpon>metro_Lateral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Compras\ERP_Compras_TipoCompra.resx">
+      <DependentUpon>ERP_Compras_TipoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\FormDinamico.resx">
+      <DependentUpon>FormDinamico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_StatusProduct.resx">
+      <DependentUpon>ERP_Inventory_StatusProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Bodegas\ERP_Inventory_UpdateMaximusAndMinimous.resx">
+      <DependentUpon>ERP_Inventory_UpdateMaximusAndMinimous.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_DialogProductEntry.resx">
+      <DependentUpon>ERP_Inventory_DialogProductEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_ConfigureAccountPayable.resx">
+      <DependentUpon>ERP_Inventory_Dialog_ConfigureAccountPayable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_InventoryDepartures.resx">
+      <DependentUpon>ERP_Inventory_Dialog_InventoryDepartures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_LocationAndStowage.resx">
+      <DependentUpon>ERP_Inventory_Dialog_LocationAndStowage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_Dialog_Quantity.resx">
+      <DependentUpon>ERP_Inventory_Dialog_Quantity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Entradas y Salidas\ERP_Inventory_StowageAvailableTransfer.resx">
+      <DependentUpon>ERP_Inventory_StowageAvailableTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_ClientesCuentasPorCobrar.resx">
+      <DependentUpon>ERP_ClientesCuentasPorCobrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_CreateCreditLine.resx">
+      <DependentUpon>ERP_CreateCreditLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_CreditLine.resx">
+      <DependentUpon>ERP_CreditLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_GenericCustomerClients.resx">
+      <DependentUpon>ERP_GenericCustomerClients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventary_Modelo.resx">
+      <DependentUpon>ERP_Inventary_Modelo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_InventorySuggestedShopping.resx">
+      <DependentUpon>ERP_InventorySuggestedShopping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateProduct.resx">
+      <DependentUpon>ERP_Inventory_CreateProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_CreateRecipe.resx">
+      <DependentUpon>ERP_Inventory_CreateRecipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_CreateSubProduct.resx">
+      <DependentUpon>ERP_Inventory_Dialog_CreateSubProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_Dialog_SuggestedChange.resx">
+      <DependentUpon>ERP_Inventory_Dialog_SuggestedChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_HeaderImputsAndOutputs.resx">
+      <DependentUpon>ERP_Inventory_HeaderImputsAndOutputs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_IngredientsRecipe.resx">
+      <DependentUpon>ERP_Inventory_IngredientsRecipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_Out.resx">
+      <DependentUpon>ERP_Inventory_Out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_ProgressBarSuggested.resx">
+      <DependentUpon>ERP_Inventory_ProgressBarSuggested.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_Busqueda.resx">
+      <DependentUpon>ERP_Inventory_Busqueda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_QuantityDialog.resx">
+      <DependentUpon>ERP_Inventory_QuantityDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventory_SubProducts.resx">
+      <DependentUpon>ERP_Inventory_SubProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Bodegas.resx">
+      <DependentUpon>ERP_Mantenimiento_Bodegas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Category.resx">
+      <DependentUpon>ERP_Mantenimiento_Category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_GiroGeneral.resx">
+      <DependentUpon>ERP_Mantenimiento_GiroGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_DialogSearch.resx">
+      <DependentUpon>ERP_Mantenimiento_DialogSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Inventary_CreaOrden.resx">
+      <DependentUpon>ERP_Inventary_CreaOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Line.resx">
+      <DependentUpon>ERP_Mantenimiento_Line.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Marcas.resx">
+      <DependentUpon>ERP_Mantenimiento_Marcas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ClientType.resx">
+      <DependentUpon>ERP_Mantenimiento_ClientType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_MeasureUnit.resx">
+      <DependentUpon>ERP_Mantenimiento_MeasureUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_OutletCatalog.resx">
+      <DependentUpon>ERP_Mantenimiento_OutletCatalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_ProductCondition.resx">
+      <DependentUpon>ERP_Mantenimiento_ProductCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\ERP_Mantenimiento_Ubicacion.resx">
+      <DependentUpon>ERP_Mantenimiento_Ubicacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_AnimalesBodega.resx">
+      <DependentUpon>Inventario_AnimalesBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_CatalogFinanciero2.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_Formulas.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_FuelReconciliationSection.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventary_OrdenCombra_Lista.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ProductSales.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_TenderCollectionSection.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_PaidInSection.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_WetStockSalesSection.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_DryStockSales.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_PumpReadings.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_EstadoCuentaCliente.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_CatalogClienteCard.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_Kardex.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaUnidadesVendidas.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaCostosUtilidades.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaExistenciasValorizado.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaMasimoMinimos.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaExistencias.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ListaPreciosPublico.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_CatalogFinanciero.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_ReporteProveedores.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventario_CatalogClientes.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reportes\Inventory_OrderCompraList.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Inventario_CatalogProveedores.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Inventory_DetailsOrderCompraList.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryCategory.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryOutPutProduct.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryEntryProduct.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryUnitMeasure.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryModelo.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryProductType.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryMarca.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryBrand.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryBodega.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryLine.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryLocation.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryOutletCatalog.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryProyecciones.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Reports\Reports_InventoryStowages.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Requisiciones\EditarRequisicion.resx">
+      <DependentUpon>EditarRequisicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_Requisitions.resx">
+      <DependentUpon>ERP_Inventory_Dialog_Requisitions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Inventario\Requisiciones\ERP_Inventory_Dialog_TypesRequisition.resx">
+      <DependentUpon>ERP_Inventory_Dialog_TypesRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Operaciones_ReportViewer.resx">
+      <DependentUpon>Operaciones_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\ModuloInventarios.resx">
+      <DependentUpon>ModuloInventarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\precios.resx">
+      <DependentUpon>precios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Proyectos\Operaciones_ProyectosCrear.resx">
+      <DependentUpon>Operaciones_ProyectosCrear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Finance_Report_LogEntriesAndExitsActualYear.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Finance_Report_LogEntriesAndExitsActualMonth.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Operaciones_Report_ScheduledGeneral.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Reports_ProductionFlow.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Report_Production_Process.rdlc" />
+    <EmbeddedResource Include="componentes\Operaciones\Reportes\Report_Scheduled.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\SubirDocumentosRespaldo.resx">
+      <DependentUpon>SubirDocumentosRespaldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoaSeguimiento.resx">
+      <DependentUpon>AprobarRechazarPoaSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOASeguimiento.resx">
+      <DependentUpon>RechazosPOASeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPEI.resx">
+      <DependentUpon>RechazosPEI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\RechazosPOA.resx">
+      <DependentUpon>RechazosPOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPei.resx">
+      <DependentUpon>AprobarRechazarPei.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\AprobarRechazarPoa.resx">
+      <DependentUpon>AprobarRechazarPoa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\AgregarAvanceEjecucion.resx">
+      <DependentUpon>AgregarAvanceEjecucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\AlertaAcciones.resx">
+      <DependentUpon>AlertaAcciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicasDirecto.resx">
+      <DependentUpon>PorcentajeAccionesEstrategicasDirecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMesAnio.resx">
+      <DependentUpon>SeleccionarMesAnio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarMes.resx">
+      <DependentUpon>SeleccionarMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\SeleccionarAnio.resx">
+      <DependentUpon>SeleccionarAnio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\SeguimientoPOA.resx">
+      <DependentUpon>SeguimientoPOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\CreacionPOA.resx">
+      <DependentUpon>CreacionPOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\AccionesEstrategicas\PorcentajeAccionesEstrategicas.resx">
+      <DependentUpon>PorcentajeAccionesEstrategicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableMapRisk.resx">
+      <DependentUpon>POA_InsertResponsableMapRisk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Matriz\MatrizProceso.resx">
+      <DependentUpon>MatrizProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Matriz\MatrizProcesoEjes.resx">
+      <DependentUpon>MatrizProcesoEjes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\ModuloDocumentacion.resx">
+      <DependentUpon>ModuloDocumentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\ModuloMapaRiesgo.resx">
+      <DependentUpon>ModuloMapaRiesgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\ModuloPOA.resx">
+      <DependentUpon>ModuloPOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\ModuloFilosofia.resx">
+      <DependentUpon>ModuloFilosofia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\ModuloPEI.resx">
+      <DependentUpon>ModuloPEI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesEstrategicas.resx">
+      <DependentUpon>POA_InsertAccionesEstrategicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesNoProgramadas.resx">
+      <DependentUpon>POA_InsertAccionesNoProgramadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertAccionesOperativas.resx">
+      <DependentUpon>POA_InsertAccionesOperativas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertEjesEstrategicos.resx">
+      <DependentUpon>POA_InsertEjesEstrategicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertFilosofiaInstitucional.resx">
+      <DependentUpon>POA_InsertFilosofiaInstitucional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGerencia.resx">
+      <DependentUpon>POA_InsertGerencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertGradoImpacto.resx">
+      <DependentUpon>POA_InsertGradoImpacto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertIndicators.resx">
+      <DependentUpon>POA_InsertIndicators.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertObjetivos.resx">
+      <DependentUpon>POA_InsertObjetivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertProbabilidad.resx">
+      <DependentUpon>POA_InsertProbabilidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResponsableEjecucion.resx">
+      <DependentUpon>POA_InsertResponsableEjecucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertResult.resx">
+      <DependentUpon>POA_InsertResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_InsertUnidadLider.resx">
+      <DependentUpon>POA_InsertUnidadLider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_Mantenimientos.resx">
+      <DependentUpon>POA_Mantenimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_EvaluacionMapa.resx">
+      <DependentUpon>POA_EvaluacionMapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Mantenimientos\POA_MapaRiesgo.resx">
+      <DependentUpon>POA_MapaRiesgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReportePOA.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReportesGenerales_ReportViewer.resx">
+      <DependentUpon>ReportesGenerales_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\Planificacion_ReportViewer.resx">
+      <DependentUpon>Planificacion_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteCuadroEstadistico.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteCumplimiento.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgoEvaluacion.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgo.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteLogrosGerencia.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteStatusAcciones.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReportePOASeguimiento.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReporteAccionesDescriptivas.rdlc" />
+    <EmbeddedResource Include="componentes\PlanEstrategico\Reportes\ReportePEI.rdlc" />
+    <EmbeddedResource Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkLocation.resx">
+      <DependentUpon>ERP_Mantenimiento_WorkLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\RecursosHumanos\ERP_Mantenimiento_WorkPosition.resx">
+      <DependentUpon>ERP_Mantenimiento_WorkPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\RecursosHumanos\RecursosHumanos_MantoEmpleados.resx">
+      <DependentUpon>RecursosHumanos_MantoEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\RecursosHumanos\Component\ModuloRecursosHumanos.resx">
+      <DependentUpon>ModuloRecursosHumanos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Reporting\Config_Components.resx">
+      <DependentUpon>Config_Components.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Reporting\Config_Reports.resx">
+      <DependentUpon>Config_Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Users\Component\ModuloHistorico.resx">
+      <DependentUpon>ModuloHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Users\Respaldos\Backup_Respaldos.resx">
+      <DependentUpon>Backup_Respaldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\UC_Actividades.resx">
+      <DependentUpon>UC_Actividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Users\Component\ModuloUsers.resx">
+      <DependentUpon>ModuloUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Users\Config_InsertUserAccesos.resx">
+      <DependentUpon>Config_InsertUserAccesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\Users\Config_UserAccess.resx">
+      <DependentUpon>Config_UserAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\RecursosHumanos\ERP_Mantenimiento_Departamentos.resx">
+      <DependentUpon>ERP_Mantenimiento_Departamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentes\VisualizadorLog\ShowLog.resx">
+      <DependentUpon>ShowLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Fina_Procesos.resx">
+      <DependentUpon>Fina_Procesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Generic_Process.resx">
+      <DependentUpon>Generic_Process.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Generic_User.resx">
+      <DependentUpon>Generic_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Operacion_Procesos.resx">
+      <DependentUpon>Operacion_Procesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\RRHH_Procesos.resx">
+      <DependentUpon>RRHH_Procesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP_Menu.resx">
+      <DependentUpon>ERP_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP_MenuMetro.resx">
+      <DependentUpon>ERP_MenuMetro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="componentes\Financiero\ActivoFijo\CD_CreaActivofijo.cd" />
+    <None Include="componentes\Financiero\ActivoFijo\dsCodeBar.xsc">
+      <DependentUpon>dsCodeBar.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\dsCodeBar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCodeBar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\dsCodeBar.xss">
+      <DependentUpon>dsCodeBar.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsDepreciation.xsc">
+      <DependentUpon>ReportFixedAssetsDepreciation.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsDepreciation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFixedAssetsDepreciation.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsDepreciation.xss">
+      <DependentUpon>ReportFixedAssetsDepreciation.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsGeneral.xsc">
+      <DependentUpon>ReportFixedAssetsGeneral.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsGeneral.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFixedAssetsGeneral.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="componentes\Financiero\ActivoFijo\Reportes\ReportFixedAssetsGeneral.xss">
+      <DependentUpon>ReportFixedAssetsGeneral.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\Contabilidad\DataSet\EPD_SatelliteERPDataSet.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Financiero\Contabilidad\DataSet\EPD_SatelliteERPDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\Financiero\Contabilidad\DataSet\EPD_SatelliteERPDataSet.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\BaseDeDatos\EPD_SatelliteERPDataSet_Inventario.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet_Inventario.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\BaseDeDatos\EPD_SatelliteERPDataSet_Inventario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet_Inventario.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\Operaciones\BaseDeDatos\EPD_SatelliteERPDataSet_Inventario.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet_Inventario.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet4.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet4.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet_ReportsInventory.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet_ReportsInventory.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet_ReportsInventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet_ReportsInventory.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\EPD_SatelliteERPDataSet_ReportsInventory.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet_ReportsInventory.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\ERP_DS_Inventary.xsc">
+      <DependentUpon>ERP_DS_Inventary.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\ERP_DS_Inventary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERP_DS_Inventary.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\Operaciones\Inventario\DataSet\ERP_DS_Inventary.xss">
+      <DependentUpon>ERP_DS_Inventary.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgo.xsc">
+      <DependentUpon>ReporteMapaRiesgo.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteMapaRiesgo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReporteMapaRiesgo.xss">
+      <DependentUpon>ReporteMapaRiesgo.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePEI.xsc">
+      <DependentUpon>ReportePEI.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePEI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportePEI.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePEI.xss">
+      <DependentUpon>ReportePEI.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePOA.xsc">
+      <DependentUpon>ReportePOA.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePOA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportePOA.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportePOA.xss">
+      <DependentUpon>ReportePOA.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportesGenerales.xsc">
+      <DependentUpon>ReportesGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportesGenerales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportesGenerales.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="componentes\PlanEstrategico\Reportes\ReportesGenerales.xss">
+      <DependentUpon>ReportesGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="epd_SatelliteERP_ClaveTemporal.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\epd_SatelliteERP.EPD_SatelliteERPDataSet2TableAdapters.SP_Report_ScheduledGeneralTableAdapter.datasource" />
+    <None Include="My Project\DataSources\epd_SatelliteERP.EPD_SatelliteERPDataSet2TableAdapters.SP_Report_ScheduledTableAdapter.datasource" />
+    <None Include="My Project\DataSources\epd_SatelliteERP.EPD_SatelliteERPDataSet2TableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\epd_SatelliteERP.EPD_SatelliteERPDataSet2TableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet1.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet1.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet2.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet2.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet5.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSet51.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSet5.xss">
+      <DependentUpon>EPD_SatelliteERPDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSetFormulas.xsc">
+      <DependentUpon>EPD_SatelliteERPDataSetFormulas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSetFormulas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPDataSetFormulas1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPDataSetFormulas.xss">
+      <DependentUpon>EPD_SatelliteERPDataSetFormulas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPFinanceLog.xsc">
+      <DependentUpon>EPD_SatelliteERPFinanceLog.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPFinanceLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPD_SatelliteERPFinanceLog1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\EPD_SatelliteERPFinanceLog.xss">
+      <DependentUpon>EPD_SatelliteERPFinanceLog.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ERP_SP_Inventory_GetCategory.xsc">
+      <DependentUpon>ERP_SP_Inventory_GetCategory.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ERP_SP_Inventory_GetCategory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERP_SP_Inventory_GetCategory1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\ERP_SP_Inventory_GetCategory.xss">
+      <DependentUpon>ERP_SP_Inventory_GetCategory.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataInventoryStowage.xsc">
+      <DependentUpon>SatelliteERP_InventarioDataInventoryStowage.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataInventoryStowage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioDataInventoryStowage1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataInventoryStowage.xss">
+      <DependentUpon>SatelliteERP_InventarioDataInventoryStowage.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet.xsc">
+      <DependentUpon>SatelliteERP_InventarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet.xss">
+      <DependentUpon>SatelliteERP_InventarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet1.xsc">
+      <DependentUpon>SatelliteERP_InventarioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDataSet1.xss">
+      <DependentUpon>SatelliteERP_InventarioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDS2.xsc">
+      <DependentUpon>SatelliteERP_InventarioDS2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDS2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioDS21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioDS2.xss">
+      <DependentUpon>SatelliteERP_InventarioDS2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioMarca.xsc">
+      <DependentUpon>SatelliteERP_InventarioMarca.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioMarca.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioMarca1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioMarca.xss">
+      <DependentUpon>SatelliteERP_InventarioMarca.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet61.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet1.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet110.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet1.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet10.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet101.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet10.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet11.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet111.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet11.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet12.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet121.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet12.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet13.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet131.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet13.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet14.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet141.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet14.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet15.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet151.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet15.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet16.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet161.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet16.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet17.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet171.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet17.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet18.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet181.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet18.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet19.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet191.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet19.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet2.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet210.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet2.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet20.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet201.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet20.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet21.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet211.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet21.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet22.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet221.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet22.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet23.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet231.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet23.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet24.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet241.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet24.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet25.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet251.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet25.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet26.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet261.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet26.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet27.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet271.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet27.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet28.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet281.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet28.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet29.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet291.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet29.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet3.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet310.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet3.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet30.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet301.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet30.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet31.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet311.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet31.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet32.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet321.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet32.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet33.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet331.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet33.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet34.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet341.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet34.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet35.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet351.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet35.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet36.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet361.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet36.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet37.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet371.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet37.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet38.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet381.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet38.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet39.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet391.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet39.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet4.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet410.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet4.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet40.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet401.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet40.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet41.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet411.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet41.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet42.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet421.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet42.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet43.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet431.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet43.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet44.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet441.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet44.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet45.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet451.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet45.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet46.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet461.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet46.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet47.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet471.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet47.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet48.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet481.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet48.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet49.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet491.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet49.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet5.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet510.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet5.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet50.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet501.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet50.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet51.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet511.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet51.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet52.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet521.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet52.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet53.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet531.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet53.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet54.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet54.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet541.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet54.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet55.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet55.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet551.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet55.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet56.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet56.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet561.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet56.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet57.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet57.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet571.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet57.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet58.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet58.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet581.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet58.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet59.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet59.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet591.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet59.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet6.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet62.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet6.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet60.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet60.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet601.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet60.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet7.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet71.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet7.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet8.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet81.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet8.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet9.xsc">
+      <DependentUpon>SatelliteERP_InventariosDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventariosDataSet91.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventariosDataSet9.xss">
+      <DependentUpon>SatelliteERP_InventariosDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioSuppliedRequisitions.xsc">
+      <DependentUpon>SatelliteERP_InventarioSuppliedRequisitions.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioSuppliedRequisitions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_InventarioSuppliedRequisitions1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_InventarioSuppliedRequisitions.xss">
+      <DependentUpon>SatelliteERP_InventarioSuppliedRequisitions.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_Inventary.xsc">
+      <DependentUpon>SatelliteERP_Inventary.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\SatelliteERP_Inventary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SatelliteERP_Inventary1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\SatelliteERP_Inventary.xss">
+      <DependentUpon>SatelliteERP_Inventary.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finansas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finansas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recursosHumanos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finansas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Roja-Bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amarillo-bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verde-bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoERP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engrene.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manuales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-backup-icon-sm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\respaldos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engrane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSACAL">
+      <Guid>{8E27C92E-1264-101C-8A2F-040224009C02}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSACAL">
+      <Guid>{8E27C92E-1264-101C-8A2F-040224009C02}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ConfigXMLCheques.xml" />
+    <Content Include="bin\Debug\SchemaXMLCheques.xml" />
+    <None Include="Resources\warning-297287_960_7201.png" />
+    <None Include="Resources\warning-297287_960_720.png" />
+    <None Include="Resources\Logo_SIGET1.jpg" />
+    <None Include="Resources\Archbishop Romero.png" />
+    <None Include="Resources\Archbishop Romero1.png" />
+    <None Include="Resources\Archbishop Romero2.png" />
+    <None Include="Resources\Archbishop Romero3.png" />
+    <None Include="Resources\Archbishop Romero4.png" />
+    <None Include="Resources\Anaranjado-Bandera.png" />
+    <Content Include="ERP-escritorioAPP_2.ico" />
+    <Content Include="Resources\Archbishop.png" />
+    <None Include="Resources\Azul-Bandera.png" />
+    <Content Include="Resources\caja.png" />
+    <None Include="Resources\Captura.JPG" />
+    <Content Include="Resources\finanzas01.png" />
+    <None Include="Resources\flat-2126883_640.png" />
+    <None Include="Resources\flat-2126878_960_720.png" />
+    <None Include="Resources\flat-2126883_640 - copia.png" />
+    <None Include="Resources\flat-2126883_640 - copia1.png" />
+    <None Include="Resources\flat-2126883_6401.png" />
+    <None Include="Resources\flat-2126878_960_7201.png" />
+    <None Include="Resources\logos__Inst_White.png" />
+    <Content Include="Resources\manuales1.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\morado-bandera.png" />
+    <Content Include="Resources\operaciones01.png" />
+    <Content Include="Resources\operaciones011.png" />
+    <Content Include="Resources\otros1.png" />
+    <Content Include="Resources\otros11.png" />
+    <None Include="Resources\pei.png" />
+    <None Include="Resources\pei1.png" />
+    <None Include="Resources\poa.png" />
+    <Content Include="Resources\respaldo.png" />
+    <Content Include="Resources\respaldo1.png" />
+    <Content Include="Resources\rrhh.png" />
+    <Content Include="Resources\rrhh1.png" />
+    <Content Include="Resources\salir.png" />
+    <Content Include="Resources\salir1.png" />
+    <Content Include="Resources\usuario.png" />
+    <Content Include="Resources\usuario1.png" />
+    <Content Include="Resources\usuario11.png" />
+    <None Include="Resources\Logo_SIGET.jpg" />
+    <None Include="Resources\Rojo.png" />
+    <None Include="Resources\alerts.png" />
+    <None Include="Resources\Amarillo.png" />
+    <Content Include="Resources\configuracion.png" />
+    <Content Include="Resources\configuracion1.png" />
+    <Content Include="Resources\configuracion2.png" />
+    <Content Include="Resources\crm1.png" />
+    <Content Include="Resources\finanzas1.png" />
+    <Content Include="Resources\imagekpi.png" />
+    <Content Include="Resources\imagekpi1.png" />
+    <Content Include="Resources\CompanyLogo.jpg" />
+    <None Include="Resources\LogoERP.jpg" />
+    <None Include="Resources\imagekpi2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
